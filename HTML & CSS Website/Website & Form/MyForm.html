@@ -1,0 +1,55 @@
+<html>
+  <link rel="stylesheet" type="text/css" href="Style.css" />
+  <head>
+    <title>REGISTER PAGE</title>
+  </head>
+  <body>
+    <h1>Register Here</h1>
+    <script type="text/javascript">
+      function validate() {
+        var fname = document.getElementById("Tfname");
+        var lname = document.getElementById("Tlname");
+        var email = document.getElementById("Temail");
+        var pass = document.getElementById("Tpass");
+        var addr = document.getElementById("Taddr");
+        var phno = document.getElementById("Tphno");
+        var aadh = document.getElementById("TAadhar");
+        if (
+          fname.value == "" ||
+          lname == "" ||
+          email == "" ||
+          pass == "" ||
+          addr == "" ||
+          phno == "" ||
+          aadh == ""
+        ) {
+          alert("All fields Mandatrory");
+          return false;
+        } else {
+          return true;
+        }
+      }
+    </script>
+    <form id="myform" onsubmit="return validate" action="registerpage.html">
+      <label for="lfname">First Name</label>
+      <input id="Tfname" type="text" placeholder="Enter First Name" />
+      <label for="llname">Last Name</label>
+      <input
+        id="Tlname"
+        type="text"
+        placeholder="Enter Last Name"
+      /><br /><br />
+      <label for="lemail">Email</label>
+      <input id="Temail" type="text" placeholder="Enter Email" />
+      <label for="lpass">Password</label>
+      <input id="Tfpass" type="text" placeholder="Enter password" /><br /><br />
+      <label for="ladrs">Address</label>
+      <input id="Taddr" type="text" placeholder="Enter Address" />
+      <label for="lphno">Phone No</label>
+      <input id="Tphno" type="text" placeholder="Enter Phone No" /><br /><br />
+      <label for="laadh">Aadhar No</label>
+      <input id="TAadhar" type="text" placeholder="Enter Aadhar No" />
+      <input id="Register" type="submit" value="Register" />
+    </form>
+  </body>
+</html>

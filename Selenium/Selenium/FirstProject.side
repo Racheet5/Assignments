@@ -1,0 +1,69 @@
+{
+  "id": "4f33f7b1-b6e1-48d8-966e-df181b656397",
+  "version": "2.0",
+  "name": "FirstProject",
+  "url": "https://demo.opencart.com/",
+  "tests": [{
+    "id": "d96b34cc-9e29-4700-8e67-ec1b49ec2e15",
+    "name": "1",
+    "commands": [{
+      "id": "0689294e-6fb1-4778-bbb3-b38c2752d090",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "115dbeff-1a74-4237-a2ec-06361f5c3a17",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddcd268d-1d26-4574-a772-cac7c8d1484d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mac (1)",
+      "targets": [
+        ["linkText=Mac (1)", "linkText"],
+        ["css=.nav-item:nth-child(1) li:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Mac (1)')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=20_27')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mac (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbc3c691-951e-44f4-a252-bdd3c0a1f042",
+      "comment": "",
+      "command": "click",
+      "target": "css=.image .img-fluid",
+      "targets": [
+        ["css=.image .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='iMac']", "xpath:img"],
+        ["xpath=//div[@id='product-list']/div/form/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//form/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4990dba6-1fe9-4f13-9b9f-bdd10b0bcda9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f7003f0e-0232-4f6f-a67a-3d576d4777d4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d96b34cc-9e29-4700-8e67-ec1b49ec2e15"]
+  }],
+  "urls": ["https://www.myntra.com/"],
+  "plugins": []
+}

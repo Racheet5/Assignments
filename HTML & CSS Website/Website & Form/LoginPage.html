@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <h1>Sign In</h1>
+    <script type="text/javascript">
+      function validate() {
+        var uname = document.getElementById("tusername");
+        var pword = document.getElementById("tpassword");
+        if (uname.value == "" || pword.value == "") {
+          alert("No Blank values are allowed");
+          return false;
+        } else {
+          return true;
+        }
+      }
+    </script>
+    <form id="myform" onsubmit="return validate()" action="HomePage.html">
+      <label for="lusername">Username</label>
+      <input type=""text" id="tusername" placeholder="Enter username" ><br /><br />
+      <label for="lpassword">Password</label>
+      <input type=""text" id="tpassword" placeholder="Enter password" ><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

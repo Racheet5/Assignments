@@ -1,0 +1,24 @@
+* {
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #266b99;
+}
+form {
+  max-width: 400px;
+  background-color: aqua;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0, 1);
+}
+input[id="submit"] {
+  background-color: gold;
+  color: rgb(101, 100, 55);
+}
+label[id="luname"] {
+  background-color: orange;
+  color: #266b99;
+}
